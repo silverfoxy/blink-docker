@@ -18,6 +18,18 @@ RUN rm /usr/lib/mozilla/plugins/flash*.so && mv /usr/lib/mozilla/plugins/* /home
 RUN wget http://amiunique.irisa.fr/fontsUbuntu.tar.gz && tar -C /usr/share/fonts/ -xf fontsUbuntu.tar.gz && rm fontsUbuntu.tar.gz
 RUN wget https://github.com/plaperdr/blink-docker/raw/master/docker/browsers/extensions/jid1-d1BM58Kj2zuEUg%40jetpack.xpi -P /usr/lib/firefox/browser/extensions
 
+# Setting up Selenium
+RUN apt-get install xvfb python3-pip --fix-missing
+RUN pip3 install selenium pyvirtualdisplay
+RUN mkdir /home/blink/Scripts
+RUN cd /home/blink/Scripts
+RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.15.0/geckodriver-v0.15.0-linux64.tar.gz
+RUN tar zxvf geckodriver-v0.15.0-linux64.tar.gz
+RUN mv geckodriver /usr/local/bin/
+RUN rm geckodriver-v0.15.0-linux64.tar.gz
+RUN export LD_PRELOAD=/home/blink/ldpreload/modUname.so
+# End of Setting up Selenium
+
 ADD scripts/*.py /home/blink/
 ADD updateContainer.py /home/blink/
 ADD browsersList.py /home/blink/

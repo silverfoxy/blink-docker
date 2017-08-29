@@ -13,6 +13,10 @@ from firefox import *
 from rws import *
 from browsersList import browsersList
 
+# Selenium imports
+from selenium import webdriver
+from pyvirtualdisplay import Display
+
 ############### Container Class
 class Container(object):
 
@@ -96,7 +100,9 @@ class Container(object):
     @staticmethod
     def selectBrowser():
         #We chose a browser from the ones provided by each OS
-        return Container.browsersDict[browsersList[random.randint(0,len(browsersList)-1)]]()
+        #return Container.browsersDict[browsersList[random.randint(0,len(browsersList)-1)]]()
+        # Always run FirefoxESR for now
+        return Container.browsersDict[2]()
 
     ### Check existence of data file
     # If the file does not exist, it is created
@@ -181,6 +187,9 @@ def main():
             #We launch the browser
             browserProcess = browser.runBrowser()
 
+            # Run selenium scrip
+            runSelenium()
+
             #We wait for either the browsing session to be finished
             while not isinstance(browserProcess.poll(),int):
                 time.sleep(1)
@@ -207,3 +216,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def runSelenium(script_name = None) :
+    display = Display(visible = 0, size = (1920, 1080))
+    display.start()
+    profile = webdriver.FirefoxProfile("/home/blink/.mozilla/firefox/blink.default")
+    driver = webdriver.Firefox(profile)
+    driver.get("https://amiunique.org/fp")
+    time.sleep(10)
+    driver.save_screenshot('/home/blink/Download/result.png')
+    driver.get_screenshot_as_png()
+    with open('/home/blink/Download/result.html', "w") as fout:
+        fout.write(self.driver.page_source.encode("utf-8"))
+        fout.flush()
