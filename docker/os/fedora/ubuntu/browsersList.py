@@ -1,2 +1,2 @@
 #List of Ubuntu browsers
-browsersList = ['FirefoxRepo','Firefox','FirefoxESR','Chrome','Chromium','Opera']
+browsersList = ['FirefoxRepo','Firefox','FirefoxESR','Chrome','Chromium']

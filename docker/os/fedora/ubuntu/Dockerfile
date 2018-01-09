@@ -1,8 +1,9 @@
 FROM ubuntu:16.04
 
 RUN sh -c 'echo "deb http://archive.canonical.com/ubuntu trusty partner" >> /etc/apt/sources.list.d/canonical_partner.list'
-RUN apt-get update && apt-get upgrade -y && apt-get install -y wget djview-plugin browser-plugin-gnash browser-plugin-lightspark browser-plugin-packagekit browser-plugin-spice browser-plugin-vlc gxineplugin kopete-plugin-thinklight kpartsplugin mozplugger rhythmbox-mozilla x2goplugin gnupg2 sqlite3 libpango1.0-0 sudo python3 python3-numpy libnss3 adobe-flashplugin firefox chromium-browser curl && apt-get clean
+RUN apt-get update && apt-get upgrade -y && apt-get install -y wget djview-plugin browser-plugin-gnash browser-plugin-lightspark browser-plugin-packagekit browser-plugin-spice browser-plugin-vlc gxineplugin kopete-plugin-thinklight kpartsplugin mozplugger rhythmbox-mozilla x2goplugin gnupg2 sqlite3 libpango1.0-0 sudo python3 python3-numpy libnss3 adobe-flashplugin firefox chromium-browser curl xvfb python3-pip unzip --fix-missing && apt-get clean
 RUN apt-get install -y libgconf-2-4 && apt-get clean
+RUN echo 'Finished Packages'
 RUN wget https://dl.google.com/linux/direct/google-talkplugin_current_amd64.deb
 RUN dpkg -i google-talkplugin_current_amd64.deb
 RUN sudo ln -sf /lib/x86_64-linux-gnu/libudev.so.1 /usr/lib/libudev.so.0
@@ -15,18 +16,25 @@ RUN mkdir -p /home/blink/.mozilla/plugins/
 RUN mkdir /home/blink/plugins/
 RUN rm /usr/lib/mozilla/plugins/flash*.so && mv /usr/lib/mozilla/plugins/* /home/blink/plugins/ && mv /usr/lib/adobe-flashplugin/libflashplayer.so /home/blink/plugins/
 
-RUN wget http://amiunique.irisa.fr/fontsUbuntu.tar.gz && tar -C /usr/share/fonts/ -xf fontsUbuntu.tar.gz && rm fontsUbuntu.tar.gz
+#RUN wget http://amiunique.irisa.fr/fontsUbuntu.tar.gz && tar -C /usr/share/fonts/ -xf fontsUbuntu.tar.gz && rm fontsUbuntu.tar.gz
 RUN wget https://github.com/plaperdr/blink-docker/raw/master/docker/browsers/extensions/jid1-d1BM58Kj2zuEUg%40jetpack.xpi -P /usr/lib/firefox/browser/extensions
 
 # Setting up Selenium
-RUN apt-get install xvfb python3-pip --fix-missing
 RUN pip3 install selenium pyvirtualdisplay
 RUN mkdir /home/blink/Scripts
 RUN cd /home/blink/Scripts
-RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.15.0/geckodriver-v0.15.0-linux64.tar.gz
-RUN tar zxvf geckodriver-v0.15.0-linux64.tar.gz
+# RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.15.0/geckodriver-v0.15.0-linux64.tar.gz
+RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-linux64.tar.gz
+# RUN tar zxvf geckodriver-v0.15.0-linux64.tar.gz
+RUN tar zxvf geckodriver-v0.19.1-linux64.tar.gz
 RUN mv geckodriver /usr/local/bin/
-RUN rm geckodriver-v0.15.0-linux64.tar.gz
+# RUN rm geckodriver-v0.15.0-linux64.tar.gz
+RUN rm geckodriver-v0.19.1-linux64.tar.gz
+# RUN wget https://chromedriver.storage.googleapis.com/2.32/chromedriver_linux64.zip
+RUN wget https://chromedriver.storage.googleapis.com/2.34/chromedriver_linux64.zip
+RUN unzip chromedriver_linux64.zip
+RUN mv chromedriver /usr/local/bin/
+RUN rm chromedriver_linux64.zip
 RUN export LD_PRELOAD=/home/blink/ldpreload/modUname.so
 # End of Setting up Selenium
 

@@ -3,6 +3,16 @@
 
 from installUtils import *
 
+def setupTorProxy():
+    #Pull the Tor proxy image
+    subprocess.call(["sudo","docker","pull","jess/tor-proxy"])
+
+    #Instantiate the container
+    subprocess.call(["sudo","docker","run","-d","--restart","always","-p","9050:9050","--name","torproxy","jess/tor-proxy"])
+
+    #Stop the container
+    subprocess.call(["sudo","docker","stop","torproxy"])
+
 def main():
     print("Blink Installation script")
 
@@ -14,8 +24,10 @@ def main():
         sys.exit("Docker not installed. Install Docker to process with the installation.")
 
     #Build OS images
-    buildDockerImageHub("blinkfedorig","os/fedora/")
-    buildDockerImageHub("blinkubuorig","os/fedora/ubuntu")
+    #buildDockerImageHub("blinkfedorig","os/fedora/")
+    #buildDockerImageHub("blinkubuorig","os/fedora/ubuntu/")
+    buildDockerImageLocal("blinkfedorig","os/fedora/")
+    buildDockerImageLocal("blinkubuorig","os/fedora/ubuntu/")
 
     #Update Dockerfiles to include the right user/group ID
     #And build the final OS images
@@ -29,6 +41,8 @@ def main():
     instantiateContainer("blinkbrowsers")
     buildDockerImageHub("blinkfonts","fonts/")
     instantiateContainer("blinkfonts")
+
+    setupTorProxy()
 
     print("Installation of Blink containers complete")
 

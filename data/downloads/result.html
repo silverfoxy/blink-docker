@@ -1,0 +1,829 @@
+<html prefix="og: http://ogp.me/ns#" lang="en-US"><!--<![endif]--><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://www.silverf0x00.com/xmlrpc.php">
+
+<title>Silverf0x00's Blog - The Stories of A Security Guy</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v6.0 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="The Stories of A Security Guy">
+<link rel="canonical" href="https://www.silverf0x00.com/">
+<link rel="next" href="https://www.silverf0x00.com/page/2/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Silverf0x00's Blog - The Stories of A Security Guy">
+<meta property="og:description" content="The Stories of A Security Guy">
+<meta property="og:url" content="https://www.silverf0x00.com/">
+<meta property="og:site_name" content="Silverf0x00's Blog">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="The Stories of A Security Guy">
+<meta name="twitter:title" content="Silverf0x00's Blog - The Stories of A Security Guy">
+<meta name="twitter:site" content="@___Silverfox___">
+<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/v1514934548259/recaptcha__en.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.silverf0x00.com\/","name":"Silverf0x00's Blog","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.silverf0x00.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Person","url":"https:\/\/www.silverf0x00.com\/","sameAs":["https:\/\/twitter.com\/___Silverfox___"],"@id":"#person","name":"Babak AA"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//secure.gravatar.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="Silverf0x00's Blog » Feed" href="https://www.silverf0x00.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Silverf0x00's Blog » Comments Feed" href="https://www.silverf0x00.com/comments/feed/">
+<!-- This site uses the Google Analytics by MonsterInsights plugin v6.2.6 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+		var disableStr = 'ga-disable-UA-78240312-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-78240312-1', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('send','pageview');
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.silverf0x00.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.1"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://www.silverf0x00.com/wp-includes/js/wp-emoji-release.min.js?ver=4.9.1" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="crayon-css" href="https://www.silverf0x00.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta" type="text/css" media="all">
+<link rel="stylesheet" id="crayon-theme-monokai-css" href="https://www.silverf0x00.com/wp-content/plugins/crayon-syntax-highlighter/themes/monokai/monokai.css?ver=_2.7.2_beta" type="text/css" media="all">
+<link rel="stylesheet" id="crayon-theme-sublime-text-css" href="https://www.silverf0x00.com/wp-content/plugins/crayon-syntax-highlighter/themes/sublime-text/sublime-text.css?ver=_2.7.2_beta" type="text/css" media="all">
+<link rel="stylesheet" id="crayon-font-monaco-css" href="https://www.silverf0x00.com/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco.css?ver=_2.7.2_beta" type="text/css" media="all">
+<link rel="stylesheet" id="sfmsb-style-css" href="https://www.silverf0x00.com/wp-content/plugins/simple-follow-me-social-buttons-widget/assets/css/style.css?ver=3.3.3" type="text/css" media="all">
+<link rel="stylesheet" id="sfmsb-icons-css" href="https://www.silverf0x00.com/wp-content/plugins/simple-follow-me-social-buttons-widget/assets/css/icons.css?ver=3.3.3" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="https://www.silverf0x00.com/wp-content/themes/nisarg/css/bootstrap.css?ver=4.9.1" type="text/css" media="all">
+<link rel="stylesheet" id="nisarg-style-css" href="https://www.silverf0x00.com/wp-content/themes/nisarg/style.css?ver=4.9.1" type="text/css" media="all">
+<style id="nisarg-style-inline-css" type="text/css">
+	/* Color Scheme */
+
+	/* Accent Color */
+
+	a:active,
+	a:hover,
+	a:focus {
+	    color: #0769bf;
+	}
+
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+		color: #0769bf;
+	}
+
+	
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+		color: #0769bf;			
+	}
+
+	@media (min-width: 768px){
+		.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+			border-top: 4px solid #0769bf;
+		}		
+	}
+
+	.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {	    
+	    background-color: #0769bf;
+	}
+
+
+	.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+		color: #0769bf;
+	}
+
+	.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+		color: #fff;
+		background-color: #0769bf;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+		background-color: #fff;
+		color: #0769bf;
+	}
+
+	@media (max-width: 767px) {
+		.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+			background-color: #0769bf;
+			color: #fff;
+		}
+	}
+
+	.sticky-post{
+	    background: #0769bf;
+	    color:white;
+	}
+	
+	.entry-title a:hover,
+	.entry-title a:focus{
+	    color: #0769bf;
+	}
+
+	.entry-header .entry-meta::after{
+	    background: #0769bf;
+	}
+
+	.fa {
+		color: #0769bf;
+	}
+
+	.btn-default{
+		border-bottom: 1px solid #0769bf;
+	}
+
+	.btn-default:hover, .btn-default:focus{
+	    border-bottom: 1px solid #0769bf;
+	    background-color: #0769bf;
+	}
+
+	.nav-previous:hover, .nav-next:hover{
+	    border: 1px solid #0769bf;
+	    background-color: #0769bf;
+	}
+
+	.next-post a:hover,.prev-post a:hover{
+	    color: #0769bf;
+	}
+
+	.posts-navigation .next-post a:hover .fa, .posts-navigation .prev-post a:hover .fa{
+	    color: #0769bf;
+	}
+
+
+	#secondary .widget-title::after{
+		background-color: #0769bf;
+	    content: "";
+	    position: absolute;
+	    width: 50px;
+	    display: block;
+	    height: 4px;    
+	    bottom: -15px;
+	}
+
+	#secondary .widget a:hover,
+	#secondary .widget a:focus{
+		color: #0769bf;
+	}
+
+	#secondary .widget_calendar tbody a {
+	    background-color: #0769bf;
+	    color: #fff;
+	    padding: 0.2em;
+	}
+
+	#secondary .widget_calendar tbody a:hover{
+	    background-color: #0769bf;
+	    color: #fff;
+	    padding: 0.2em;
+	}	
+
+</style>
+<link rel="stylesheet" id="font-awesome-css" href="https://www.silverf0x00.com/wp-content/themes/nisarg/font-awesome/css/font-awesome.min.css?ver=4.9.1" type="text/css" media="all">
+<link rel="stylesheet" id="nisarggooglefonts-css" href="//fonts.googleapis.com/css?family=Lato:400,300italic,700|Source+Sans+Pro:400,400italic" type="text/css" media="all">
+<link rel="stylesheet" id="wp-featherlight-css" href="https://www.silverf0x00.com/wp-content/plugins/wp-featherlight/css/wp-featherlight.min.css?ver=1.2.0" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="https://www.silverf0x00.com/wp-content/plugins/jetpack/css/jetpack.css?ver=5.7" type="text/css" media="all">
+<script type="text/javascript" src="https://www.silverf0x00.com/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="https://www.silverf0x00.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"https:\/\/www.silverf0x00.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.silverf0x00.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=_2.7.2_beta"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"https:\/\/www.silverf0x00.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.silverf0x00.com/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=6.2.6"></script>
+<script type="text/javascript" src="https://www.silverf0x00.com/wp-content/plugins/simple-follow-me-social-buttons-widget/assets/js/front-widget.js?ver=3.3.3"></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='https://www.silverf0x00.com/wp-content/themes/nisarg/js/html5shiv.js?ver=3.7.3'></script>
+<![endif]-->
+<link rel="https://api.w.org/" href="https://www.silverf0x00.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.silverf0x00.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.silverf0x00.com/wp-includes/wlwmanifest.xml"> 
+<link rel="shortlink" href="https://wp.me/8b5Eb">
+
+<link rel="dns-prefetch" href="//v0.wordpress.com">
+<link rel="dns-prefetch" href="//widgets.wp.com">
+<link rel="dns-prefetch" href="//s0.wp.com">
+<link rel="dns-prefetch" href="//0.gravatar.com">
+<link rel="dns-prefetch" href="//1.gravatar.com">
+<link rel="dns-prefetch" href="//2.gravatar.com">
+<link rel="dns-prefetch" href="//jetpack.wordpress.com">
+<link rel="dns-prefetch" href="//s1.wp.com">
+<link rel="dns-prefetch" href="//s2.wp.com">
+<link rel="dns-prefetch" href="//public-api.wordpress.com">
+<style type="text/css">img#wpstats{display:none}</style>
+<style type="text/css">
+        .site-header { background: #020202; }
+</style>
+
+	<style type="text/css" id="nisarg-header-css">
+					.site-header {
+					background: url(https://www.silverf0x00.com/wp-content/uploads/2016/05/cropped-information-program-security-strategy-2.jpg) no-repeat scroll top;
+											background-size: 1600px auto;
+						height: 399px;
+									}
+				@media (max-width: 767px) {
+					.site-header {
+													background-size: 768px auto;
+							height: 191.52px;
+										
+					}
+				}
+				@media (max-width: 359px) {
+					.site-header {
+													background-size: 768px auto;
+							height: 89.775px;
+												
+					}
+					
+				}
+				.site-header{
+					-webkit-box-shadow: 0px 0px 2px 1px rgba(182,182,182,0.3);
+			    	-moz-box-shadow: 0px 0px 2px 1px rgba(182,182,182,0.3);
+			    	-o-box-shadow: 0px 0px 2px 1px rgba(182,182,182,0.3);
+			    	box-shadow: 0px 0px 2px 1px rgba(182,182,182,0.3);
+				}
+  
+		.site-title,
+		.site-description {
+			color: #ffffff;
+		}
+		.site-title::after{
+			background: #ffffff;
+			content:"";       
+		}
+	
+	</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #efefef; }
+</style>
+<link rel="icon" href="https://www.silverf0x00.com/wp-content/uploads/2016/05/cropped-information-program-security-strategy-32x32.jpg" sizes="32x32">
+<link rel="icon" href="https://www.silverf0x00.com/wp-content/uploads/2016/05/cropped-information-program-security-strategy-192x192.jpg" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://www.silverf0x00.com/wp-content/uploads/2016/05/cropped-information-program-security-strategy-180x180.jpg">
+<meta name="msapplication-TileImage" content="https://www.silverf0x00.com/wp-content/uploads/2016/05/cropped-information-program-security-strategy-270x270.jpg">
+
+<meta name="google-site-verification" content="iH11HghwHxITV-d4NutsyKVYnbTA394_hN3GcAYOZ4w">
+
+<link rel="stylesheet" type="text/css" id="gravatar-card-css" href="https://secure.gravatar.com/css/hovercard.css?ver=2018Janaa"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="https://secure.gravatar.com/css/services.css?ver=2018Janaa"></head>
+ 
+<body class="home blog custom-background wp-featherlight-captions">
+<div id="page" class="hfeed site">
+<header id="masthead" role="banner">
+  
+
+    <nav class="navbar navbar-default navbar-fixed-top navbar-left" role="navigation"> 
+      <!-- Brand and toggle get grouped for better mobile display --> 
+      <div class="container" id="navigation_menu">
+        <div class="navbar-header"> 
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
+            <span class="sr-only">Toggle navigation</span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+          </button> 
+                    <a class="navbar-brand" href="https://www.silverf0x00.com/">Silverf0x00's Blog</a>
+        </div> 
+        
+
+          <div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-main-menu" class="nav navbar-nav"><li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-13 active"><a title="Home" href="https://www.silverf0x00.com">Home</a></li>
+<li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15"><a title="About Me" href="https://www.silverf0x00.com/about-me/">About Me</a></li>
+</ul></div>        
+      </div><!--#container-->
+    </nav>
+ 
+
+  <div id="cc_spacer" style="height: 50px;"></div><!-- used to clear fixed navigation by the themes js --> 
+  
+  <div class="site-header" style="height: 100px; background-position: center bottom !important;">
+      <div class="site-branding">   
+        <a class="home-link" href="https://www.silverf0x00.com/" title="Silverf0x00's Blog" rel="home">
+          <h1 class="site-title">Silverf0x00's Blog</h1>
+          <h2 class="site-description">The Stories of A Security Guy</h2>
+        </a>
+      </div><!--.site-branding-->
+  </div><!--.site-header--> 
+</header>    
+
+<div id="content" class="site-content">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78240312-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+    
+    
+	<div class="container">
+            <div class="row">
+                <div id="primary" class="col-md-9 content-area">
+						<main id="main" class="site-main" role="main">
+
+						
+							
+														
+								
+<article id="post-488" class="post-content post-488 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized category-vulnerability tag-esteemaudit tag-nsa tag-shadowbrokers tag-vulnerability tag-wannacry">
+
+	
+
+	
+	<header class="entry-header">	
+	
+		<span class="screen-reader-text">Shadowbrokers’ Leaks, Next Versions of WannaCry and Adylkuzz on the Rise ?&gt;</span>
+
+					<h2 class="entry-title">
+				<a href="https://www.silverf0x00.com/shadowbrokers-leaks-next-versions-wannacry/" rel="bookmark">Shadowbrokers’ Leaks, Next Versions of WannaCry and Adylkuzz on the Rise</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://www.silverf0x00.com/shadowbrokers-leaks-next-versions-wannacry/" title="11:35 AM" rel="bookmark"><time class="entry-date" datetime="2017-05-27T11:35:08+00:00" pubdate="">May 27, 2017 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://www.silverf0x00.com/author/silverfoxy/" title="View all posts by Silverfox" rel="author">Silverfox</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://www.silverf0x00.com/shadowbrokers-leaks-next-versions-wannacry/#respond" class="comments-link">0 Comment</a></h5>
+		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+	<div class="featured-image"><img src="https://www.silverf0x00.com/wp-content/uploads/2017/05/banner.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt="" srcset="https://www.silverf0x00.com/wp-content/uploads/2017/05/banner.jpg 844w, https://www.silverf0x00.com/wp-content/uploads/2017/05/banner-300x101.jpg 300w, https://www.silverf0x00.com/wp-content/uploads/2017/05/banner-768x259.jpg 768w, https://www.silverf0x00.com/wp-content/uploads/2017/05/banner-604x204.jpg 604w" sizes="(max-width: 844px) 100vw, 844px" width="844" height="285"></div>	
+				    <div class="entry-summary">
+		        <p>Introduction During the past couple of weeks, we have seen a rise in public abuse of Shadowbrokers’ leaked exploits allegedly used by the NSA, a handful of these exploits target windows operating system and gives attackers the ability to reliably penetrate into windows boxes! Eternalblue is the name of the exploit that targeted SMB 445 port on windows operating systems that gave you RCE, it was patched by Microsoft a couple of days before the leak but many systems were…</p>
+<p class="read-more"><a class="btn btn-default" href="https://www.silverf0x00.com/shadowbrokers-leaks-next-versions-wannacry/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+		    </div><!-- .entry-summary -->
+		 
+
+    	
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+							
+								
+<article id="post-455" class="post-content post-455 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+
+	
+
+	
+	<header class="entry-header">	
+	
+		<span class="screen-reader-text">Analysis of a Scam: Fake Telegram Client (BlackGram) ?&gt;</span>
+
+					<h2 class="entry-title">
+				<a href="https://www.silverf0x00.com/analysis-of-a-scam-fake-telegram-client-blackgram/" rel="bookmark">Analysis of a Scam: Fake Telegram Client (BlackGram)</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://www.silverf0x00.com/analysis-of-a-scam-fake-telegram-client-blackgram/" title="4:10 AM" rel="bookmark"><time class="entry-date" datetime="2017-04-01T04:10:31+00:00" pubdate="">April 1, 2017 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://www.silverf0x00.com/author/silverfoxy/" title="View all posts by Silverfox" rel="author">Silverfox</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://www.silverf0x00.com/analysis-of-a-scam-fake-telegram-client-blackgram/#respond" class="comments-link">0 Comment</a></h5>
+		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+	<div class="featured-image"><img src="https://www.silverf0x00.com/wp-content/uploads/2017/04/Screenshot_2017-03-30-15-28-17-1038x576.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt="" width="1038" height="576"></div>	
+				    <div class="entry-summary">
+		        <p>I’m officially contributing to telescam.ir project where we analyze the growing trend of android malware and scam campaigns spreading via Telegram messenger in Iran. Since Telegram is the dominant messaging application used by Iranians, scammers have built their tools and services on top of this infrastructure. We have observed scam campaigns where they take your money but don’t deliver the service they promised and we have also observed the case where various social engineering techniques are used to get access…</p>
+<p class="read-more"><a class="btn btn-default" href="https://www.silverf0x00.com/analysis-of-a-scam-fake-telegram-client-blackgram/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+		    </div><!-- .entry-summary -->
+		 
+
+    	
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+							
+								
+<article id="post-425" class="post-content post-425 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+
+	
+
+	
+	<header class="entry-header">	
+	
+		<span class="screen-reader-text">Never Trust Untrusted SSL Certificates, XSS in Certcc SSLCheck subdomain ?&gt;</span>
+
+					<h2 class="entry-title">
+				<a href="https://www.silverf0x00.com/never-trust-untrusted-ssl-certificates-xss-in-certcc-sslcheck-subdomain/" rel="bookmark">Never Trust Untrusted SSL Certificates, XSS in Certcc SSLCheck subdomain</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://www.silverf0x00.com/never-trust-untrusted-ssl-certificates-xss-in-certcc-sslcheck-subdomain/" title="3:33 PM" rel="bookmark"><time class="entry-date" datetime="2017-03-16T15:33:03+00:00" pubdate="">March 16, 2017 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://www.silverf0x00.com/author/silverfoxy/" title="View all posts by Silverfox" rel="author">Silverfox</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://www.silverf0x00.com/never-trust-untrusted-ssl-certificates-xss-in-certcc-sslcheck-subdomain/#comments" class="comments-link">2 comments</a></h5>
+		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+	<div class="featured-image"><img src="https://www.silverf0x00.com/wp-content/uploads/2017/03/S2creen-Shot-2017-02-01-at-11.31.01-PM-29-1038x439.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt="" width="1038" height="439"></div>	
+				    <div class="entry-summary">
+		        <p>In this blog post I’m going to discuss the XSS vulnerability that I found in sslcheck.certcc.ir. Certcc has developed its own SSL configuration assessment service (like SSLLabs.com). The good point about this is that websites that are only reachable from Iran’s IP addresses can be tested using this service. I was playing around with this website to see how it works in contrast to SSLLabs.com, I found out that it gives you much more options like entering ip addresses, testing…</p>
+<p class="read-more"><a class="btn btn-default" href="https://www.silverf0x00.com/never-trust-untrusted-ssl-certificates-xss-in-certcc-sslcheck-subdomain/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+		    </div><!-- .entry-summary -->
+		 
+
+    	
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+							
+								
+<article id="post-389" class="post-content post-389 post type-post status-publish format-image has-post-thumbnail hentry category-android category-android-malware category-scam category-uncategorized post_format-post-format-image">
+
+	
+
+	
+	<header class="entry-header">	
+	
+		<span class="screen-reader-text">Easy Money, As Simple As An Android Scam! ?&gt;</span>
+
+					<h2 class="entry-title">
+				<a href="https://www.silverf0x00.com/easy-money-as-simple-as-an-android-scam/" rel="bookmark">Easy Money, As Simple As An Android Scam!</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://www.silverf0x00.com/easy-money-as-simple-as-an-android-scam/" title="2:15 AM" rel="bookmark"><time class="entry-date" datetime="2017-02-07T02:15:01+00:00" pubdate="">February 7, 2017 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://www.silverf0x00.com/author/silverfoxy/" title="View all posts by Silverfox" rel="author">Silverfox</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://www.silverf0x00.com/easy-money-as-simple-as-an-android-scam/#respond" class="comments-link">0 Comment</a></h5>
+		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+	<div class="featured-image"><img src="https://www.silverf0x00.com/wp-content/uploads/2017/02/totally-legit-27.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt="totally legit" srcset="https://www.silverf0x00.com/wp-content/uploads/2017/02/totally-legit-27.jpg 500w, https://www.silverf0x00.com/wp-content/uploads/2017/02/totally-legit-27-300x217.jpg 300w, https://www.silverf0x00.com/wp-content/uploads/2017/02/totally-legit-27-373x270.jpg 373w" sizes="(max-width: 500px) 100vw, 500px" width="500" height="362"></div>	
+				    <div class="entry-summary">
+		        <p>The story – Smelly Smelly apk One of my colleagues came to me with an apk (Android application), he said he can’t make it work on his Genymotion emulator but he’s 100% certain it’s an Iranian malware. Based on his observation the guy behind this application was spending more than 500$ daily to spread this app on Telegram messenger public channels, he was basically paying channel administrators with huge number of members to advertise and spread his application. A non-exhaustive…</p>
+<p class="read-more"><a class="btn btn-default" href="https://www.silverf0x00.com/easy-money-as-simple-as-an-android-scam/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+		    </div><!-- .entry-summary -->
+		 
+
+    	
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+							
+								
+<article id="post-369" class="post-content post-369 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+
+	
+
+	
+	<header class="entry-header">	
+	
+		<span class="screen-reader-text">Generating the Exploit for OpenSSL 1.1.0a, b CVE-2016-7054 Part 2/3 ?&gt;</span>
+
+					<h2 class="entry-title">
+				<a href="https://www.silverf0x00.com/generating-the-exploit-for-openssl-1-1-0a-b-cve-2016-7054-part-23/" rel="bookmark">Generating the Exploit for OpenSSL 1.1.0a, b CVE-2016-7054 Part 2/3</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://www.silverf0x00.com/generating-the-exploit-for-openssl-1-1-0a-b-cve-2016-7054-part-23/" title="2:31 AM" rel="bookmark"><time class="entry-date" datetime="2016-12-11T02:31:50+00:00" pubdate="">December 11, 2016 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://www.silverf0x00.com/author/silverfoxy/" title="View all posts by Silverfox" rel="author">Silverfox</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://www.silverf0x00.com/generating-the-exploit-for-openssl-1-1-0a-b-cve-2016-7054-part-23/#comments" class="comments-link">2 comments</a></h5>
+		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+	<div class="featured-image"><img src="https://www.silverf0x00.com/wp-content/uploads/2016/12/Screen-Shot-2016-12-11-at-1.36.04-AM-1-e1481407732648.png" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt="OpenSSL 1.1.0a, b Vulnerability" width="600" height="298"></div>	
+				    <div class="entry-summary">
+		        <p>Continuing the previous post, now that we know what MACs are and how they work in the context of TLS protocol we can move further ahead and analyze OpenSSL 1.1.0a and 1.1.0b Heap Overflow vulnerability. To exploit this vulnerability (cve-2016-7054) we need to negotiate a ChaCha20-Poly1305 cipher suite with the server and send a message with a bad mac. Let us first setup the server that’s running OpenSSL 1.1.0a. Setting Up OpenSSL 1.1.0a We can download the desired version from…</p>
+<p class="read-more"><a class="btn btn-default" href="https://www.silverf0x00.com/generating-the-exploit-for-openssl-1-1-0a-b-cve-2016-7054-part-23/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+		    </div><!-- .entry-summary -->
+		 
+
+    	
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+							
+								
+<article id="post-284" class="post-content post-284 post type-post status-publish format-standard has-post-thumbnail hentry category-code category-ssltls category-vulnerability">
+
+	
+
+	
+	<header class="entry-header">	
+	
+		<span class="screen-reader-text">Overview of MAC Algorithms, Fuzzing TLS and Finally Exploiting CVE-2016-7054 Part 1/3 ?&gt;</span>
+
+					<h2 class="entry-title">
+				<a href="https://www.silverf0x00.com/overview-of-mac-algorithms-fuzzing-tls-and-finally-exploiting-cve-2016-7054-part-1/" rel="bookmark">Overview of MAC Algorithms, Fuzzing TLS and Finally Exploiting CVE-2016-7054 Part 1/3</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://www.silverf0x00.com/overview-of-mac-algorithms-fuzzing-tls-and-finally-exploiting-cve-2016-7054-part-1/" title="2:29 AM" rel="bookmark"><time class="entry-date" datetime="2016-12-05T02:29:03+00:00" pubdate="">December 5, 2016 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://www.silverf0x00.com/author/silverfoxy/" title="View all posts by Silverfox" rel="author">Silverfox</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://www.silverf0x00.com/overview-of-mac-algorithms-fuzzing-tls-and-finally-exploiting-cve-2016-7054-part-1/#comments" class="comments-link">1 comment</a></h5>
+		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+	<div class="featured-image"><img src="https://www.silverf0x00.com/wp-content/uploads/2016/12/Screen-Shot-2016-12-03-at-9.54.43-PM.png" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt="" srcset="https://www.silverf0x00.com/wp-content/uploads/2016/12/Screen-Shot-2016-12-03-at-9.54.43-PM.png 481w, https://www.silverf0x00.com/wp-content/uploads/2016/12/Screen-Shot-2016-12-03-at-9.54.43-PM-300x195.png 300w, https://www.silverf0x00.com/wp-content/uploads/2016/12/Screen-Shot-2016-12-03-at-9.54.43-PM-416x270.png 416w" sizes="(max-width: 481px) 100vw, 481px" width="481" height="312"></div>	
+				    <div class="entry-summary">
+		        <p>Overview of MAC Algorithms, TLS Protocol and CHACHA20-POLY1305 Algorithms In the upcoming posts I’m going to give an introduction on Openssl CVE-2016-7054 vulnerability and the terminology about this topic. In part 2 we will discuss available tools and techniques and how to actually produce an exploit for this vulnerability, in the 3rd part we will try to enumerate installed Openssl version on our systems and see how we can update software packages that use Openssl like Apache, Nginx and Python….</p>
+<p class="read-more"><a class="btn btn-default" href="https://www.silverf0x00.com/overview-of-mac-algorithms-fuzzing-tls-and-finally-exploiting-cve-2016-7054-part-1/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+		    </div><!-- .entry-summary -->
+		 
+
+    	
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+							
+								
+<article id="post-200" class="post-content post-200 post type-post status-publish format-standard has-post-thumbnail hentry category-iis category-ssltls">
+
+	
+
+	
+	<header class="entry-header">	
+	
+		<span class="screen-reader-text">TLS Extended Master Secret, Breaking SSL Proxies ?&gt;</span>
+
+					<h2 class="entry-title">
+				<a href="https://www.silverf0x00.com/tls-extended-master-secret-breaking-ssl-proxies/" rel="bookmark">TLS Extended Master Secret, Breaking SSL Proxies</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://www.silverf0x00.com/tls-extended-master-secret-breaking-ssl-proxies/" title="11:52 AM" rel="bookmark"><time class="entry-date" datetime="2016-08-14T11:52:34+00:00" pubdate="">August 14, 2016 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://www.silverf0x00.com/author/silverfoxy/" title="View all posts by Silverfox" rel="author">Silverfox</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://www.silverf0x00.com/tls-extended-master-secret-breaking-ssl-proxies/#comments" class="comments-link">5 comments</a></h5>
+		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+	<div class="featured-image"><img src="https://www.silverf0x00.com/wp-content/uploads/2016/08/broken_key-100572780-primary.idge_.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt="" srcset="https://www.silverf0x00.com/wp-content/uploads/2016/08/broken_key-100572780-primary.idge_.jpg 620w, https://www.silverf0x00.com/wp-content/uploads/2016/08/broken_key-100572780-primary.idge_-300x200.jpg 300w, https://www.silverf0x00.com/wp-content/uploads/2016/08/broken_key-100572780-primary.idge_-405x270.jpg 405w" sizes="(max-width: 620px) 100vw, 620px" width="620" height="413"></div>	
+				    <div class="entry-summary">
+		        <p>SSL Proxy Failing To Decrypt The Handshake, Fixing Connection Reset Issue in New Browsers There was a new update couple of months ago affecting web servers and web browsers introducing a new TLS extension (Extended master secret) that changes the way master_secret is generated. This update broke the devices that were doing SSL inspection or proxy because they wouldn’t be able to decrypt the handshake and ultimately would reset the connection. In this post we’re going discuss the issue and…</p>
+<p class="read-more"><a class="btn btn-default" href="https://www.silverf0x00.com/tls-extended-master-secret-breaking-ssl-proxies/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+		    </div><!-- .entry-summary -->
+		 
+
+    	
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+							
+								
+<article id="post-129" class="post-content post-129 post type-post status-publish format-standard has-post-thumbnail hentry category-iis category-ssltls">
+
+	
+
+	
+	<header class="entry-header">	
+	
+		<span class="screen-reader-text">Client Certificate Authentication in SSL/TLS and its interaction with Web Application Firewalls ?&gt;</span>
+
+					<h2 class="entry-title">
+				<a href="https://www.silverf0x00.com/client-certificate-authentication-in-ssltls-and-its-interaction-with-web-application-firewalls/" rel="bookmark">Client Certificate Authentication in SSL/TLS and its interaction with Web Application Firewalls</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://www.silverf0x00.com/client-certificate-authentication-in-ssltls-and-its-interaction-with-web-application-firewalls/" title="2:29 PM" rel="bookmark"><time class="entry-date" datetime="2016-08-08T14:29:15+00:00" pubdate="">August 8, 2016 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://www.silverf0x00.com/author/silverfoxy/" title="View all posts by Silverfox" rel="author">Silverfox</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://www.silverf0x00.com/client-certificate-authentication-in-ssltls-and-its-interaction-with-web-application-firewalls/#respond" class="comments-link">0 Comment</a></h5>
+		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+	<div class="featured-image"><img src="https://www.silverf0x00.com/wp-content/uploads/2016/08/JPEG-Image-450-×-450-pixels-e1470656832411.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt="SSL Logo" width="250" height="250"></div>	
+				    <div class="entry-summary">
+		        <p>In a previous blog post I discussed about Client Certificate Authentication and possible implementation methods. In this post I’m going to delve deep into TLS protocol implementation, specifically the Client Certificate part. During the setup of Client Certificate Authentication on a web application I faced various issues and when a piece of technology is just a black box in your view, there’s not much tuning or debugging that can take place when things stop working. So I spent a handful…</p>
+<p class="read-more"><a class="btn btn-default" href="https://www.silverf0x00.com/client-certificate-authentication-in-ssltls-and-its-interaction-with-web-application-firewalls/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+		    </div><!-- .entry-summary -->
+		 
+
+    	
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+							
+								
+<article id="post-151" class="post-content post-151 post type-post status-publish format-standard hentry category-code category-vulnerability">
+
+	
+
+	
+	<header class="entry-header">	
+	
+		<span class="screen-reader-text">Tools for testing HTTPoxy Vulnerability ?&gt;</span>
+
+					<h2 class="entry-title">
+				<a href="https://www.silverf0x00.com/tools-for-testing-httpoxy-vulnerability/" rel="bookmark">Tools for testing HTTPoxy Vulnerability</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://www.silverf0x00.com/tools-for-testing-httpoxy-vulnerability/" title="7:21 PM" rel="bookmark"><time class="entry-date" datetime="2016-07-21T19:21:00+00:00" pubdate="">July 21, 2016 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://www.silverf0x00.com/author/silverfoxy/" title="View all posts by Silverfox" rel="author">Silverfox</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://www.silverf0x00.com/tools-for-testing-httpoxy-vulnerability/#respond" class="comments-link">0 Comment</a></h5>
+		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+		
+				    <div class="entry-summary">
+		        <p>I’ve developed a script that you can run on your server and test for CGI HTTPoxy vulnerability. It’s available on my github in a repository named HTTPoxy-Test-Tools. I’ve currently developed the script for apache web servers but I’ll be adding support for other webservers gradually. Edit: Added IIS HTTPoxy Testing Tool: https://github.com/silverfoxy/HTTPoxy-Test-Tools/tree/master/iis_httpoxy HTTPoxy Test Tools This tool finds your webserver’s CGI directory, adds a temporary file that returns the HTTP_PROXY environment variable. It then sends a GET request to this…</p>
+<p class="read-more"><a class="btn btn-default" href="https://www.silverf0x00.com/tools-for-testing-httpoxy-vulnerability/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+		    </div><!-- .entry-summary -->
+		 
+
+    	
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+							
+								
+<article id="post-138" class="post-content post-138 post type-post status-publish format-standard has-post-thumbnail hentry category-tips category-vulnerability">
+
+	
+
+	
+	<header class="entry-header">	
+	
+		<span class="screen-reader-text">HTTPoxy vulnerability affecting CGI Applications ?&gt;</span>
+
+					<h2 class="entry-title">
+				<a href="https://www.silverf0x00.com/httpoxy-vulnerability-affecting-cgi-applications/" rel="bookmark">HTTPoxy vulnerability affecting CGI Applications</a>
+			</h2>
+		
+				<div class="entry-meta">
+			<h5 class="entry-date"><i class="fa fa-calendar-o"></i> <a href="https://www.silverf0x00.com/httpoxy-vulnerability-affecting-cgi-applications/" title="7:09 PM" rel="bookmark"><time class="entry-date" datetime="2016-07-21T19:09:28+00:00" pubdate="">July 21, 2016 </time></a><span class="byline"><span class="sep"></span><i class="fa fa-user"></i>
+<span class="author vcard"><a class="url fn n" href="https://www.silverf0x00.com/author/silverfoxy/" title="View all posts by Silverfox" rel="author">Silverfox</a></span></span> <i class="fa fa-comments-o"></i><span class="screen-reader-text">Comments </span> <a href="https://www.silverf0x00.com/httpoxy-vulnerability-affecting-cgi-applications/#respond" class="comments-link">0 Comment</a></h5>
+		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+	<div class="featured-image"><img src="https://www.silverf0x00.com/wp-content/uploads/2016/07/8XCIcTAL-e1469352397150.jpg" class="attachment-nisarg-full-width size-nisarg-full-width wp-post-image" alt="" width="200" height="200"></div>	
+				    <div class="entry-summary">
+		        <p>There’s this new vulnerability with a website [HTTPoxy.org] and a logo. Apart from the complete description that’s available at their official website I’m going to walk you through it and give you some practical examples of abuse cases. I’ve also developed a tool that you can run on your servers which tells you if you’re vulnerable or not. What is HTTPoxy and how does it work? HTTPoxy is the name of a vulnerability affecting CGI based applications. This can affect…</p>
+<p class="read-more"><a class="btn btn-default" href="https://www.silverf0x00.com/httpoxy-vulnerability-affecting-cgi-applications/"> Read More<span class="screen-reader-text">  Read More</span></a></p>
+		    </div><!-- .entry-summary -->
+		 
+
+    	
+
+	<footer class="entry-footer">
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+							
+								<nav class="navigation posts-navigation" role="navigation">
+		<h2 class="screen-reader-text">Posts navigation</h2>
+		<div class="nav-links">
+
+			<div class="row">
+				<div class="col-md-6"><p> </p></div>			
+			
+					
+				<div class="col-md-6 prev-post">		
+				<a href="https://www.silverf0x00.com/page/2/">OLDER POST<i class="fa fa-angle-double-right"></i></a>				</div>
+								</div>		
+		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+	
+						
+						</main><!-- #main -->
+				</div><!-- #primary -->
+
+				<div id="secondary" class="col-md-3 sidebar widget-area" role="complementary">
+        <aside id="search-2" class="widget widget_search">
+<form role="search" method="get" class="search-form" action="https://www.silverf0x00.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input class="search-field" placeholder="Search …" value="" name="s" title="Search for:" type="search">
+	</label>
+	<button type="submit" class="search-submit"><span class="screen-reader-text">Search</span></button>
+</form>
+</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h4 class="widget-title">Recent Posts</h4>		<ul>
+											<li>
+					<a href="https://www.silverf0x00.com/shadowbrokers-leaks-next-versions-wannacry/">Shadowbrokers’ Leaks, Next Versions of WannaCry and Adylkuzz on the Rise</a>
+									</li>
+											<li>
+					<a href="https://www.silverf0x00.com/analysis-of-a-scam-fake-telegram-client-blackgram/">Analysis of a Scam: Fake Telegram Client (BlackGram)</a>
+									</li>
+											<li>
+					<a href="https://www.silverf0x00.com/never-trust-untrusted-ssl-certificates-xss-in-certcc-sslcheck-subdomain/">Never Trust Untrusted SSL Certificates, XSS in Certcc SSLCheck subdomain</a>
+									</li>
+											<li>
+					<a href="https://www.silverf0x00.com/easy-money-as-simple-as-an-android-scam/">Easy Money, As Simple As An Android Scam!</a>
+									</li>
+											<li>
+					<a href="https://www.silverf0x00.com/generating-the-exploit-for-openssl-1-1-0a-b-cve-2016-7054-part-23/">Generating the Exploit for OpenSSL 1.1.0a, b CVE-2016-7054 Part 2/3</a>
+									</li>
+					</ul>
+		</aside><aside id="archives-2" class="widget widget_archive"><h4 class="widget-title">Archives</h4>		<ul>
+			<li><a href="https://www.silverf0x00.com/2017/05/">May 2017</a></li>
+	<li><a href="https://www.silverf0x00.com/2017/04/">April 2017</a></li>
+	<li><a href="https://www.silverf0x00.com/2017/03/">March 2017</a></li>
+	<li><a href="https://www.silverf0x00.com/2017/02/">February 2017</a></li>
+	<li><a href="https://www.silverf0x00.com/2016/12/">December 2016</a></li>
+	<li><a href="https://www.silverf0x00.com/2016/08/">August 2016</a></li>
+	<li><a href="https://www.silverf0x00.com/2016/07/">July 2016</a></li>
+	<li><a href="https://www.silverf0x00.com/2016/06/">June 2016</a></li>
+	<li><a href="https://www.silverf0x00.com/2016/05/">May 2016</a></li>
+		</ul>
+		</aside><aside id="categories-2" class="widget widget_categories"><h4 class="widget-title">Categories</h4>		<ul>
+	<li class="cat-item cat-item-9"><a href="https://www.silverf0x00.com/category/android/">Android</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="https://www.silverf0x00.com/category/android/android-malware/">Android Malware</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://www.silverf0x00.com/category/code/">Code</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="https://www.silverf0x00.com/category/iis/">IIS</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="https://www.silverf0x00.com/category/scam/">Scam</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="https://www.silverf0x00.com/category/ssltls/">SSL/TLS</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://www.silverf0x00.com/category/tips/">Tips</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="https://www.silverf0x00.com/category/uncategorized/">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://www.silverf0x00.com/category/vulnerability/">Vulnerability</a>
+</li>
+		</ul>
+</aside><aside id="text-3" class="widget widget_text"><h4 class="widget-title">Links</h4>			<div class="textwidget"><a href="http://d3c0der.ir" target="_blank">d3c0der.ir</a></div>
+		</aside><aside id="sfmsb_settings-3" class="widget sfmsb_widget"><div class="sfmsb-follow-social-buttons sfmsb-float sfmsb-circle 30 sfmsb-horizontal"><span class="sfmsb-text" style="font-size:18px;">Follow me on:</span><a target="_blank" href="https://twitter.com/___silverfox___"><span class="sfmsb-icon-twitter sfmsb-circle" style="color:#55acee;font-size:30px;" data-color="#55acee"></span></a><a target="_blank" href="http://github.com/silverfoxy/"><span class="sfmsb-icon-github sfmsb-circle" style="color:#101010;font-size:30px;" data-color="#101010"></span></a><div class="sfmsb-clearfix"></div></div></aside></div><!-- #secondary .widget-area -->
+
+
+			    </div><!--row-->      
+
+		</div><!--.container-->
+		
+	</div><!-- #content -->
+	
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="row site-info">
+			© 2018 
+			<span class="sep"> | </span>
+			Proudly Powered by 			<a href="https://wordpress.org/">WordPress</a>
+			<span class="sep"> | </span>
+
+			Theme: Nisarg by <a href="http://www.falgunidesai.com/" rel="designer">Falguni Desai</a>.
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+	<div style="display:none">
+	</div>
+<script type="text/javascript" src="https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201802"></script>
+<script type="text/javascript" src="https://secure.gravatar.com/js/gprofiles.js?ver=2018Janaa"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.silverf0x00.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.9.1"></script>
+<script type="text/javascript" src="https://www.silverf0x00.com/wp-content/themes/nisarg/js/bootstrap.js?ver=4.9.1"></script>
+<script type="text/javascript" src="https://www.silverf0x00.com/wp-content/themes/nisarg/js/skip-link-focus-fix.js?ver=20130115"></script>
+<script type="text/javascript" src="https://www.silverf0x00.com/wp-content/themes/nisarg/js/nisarg.js?ver=4.9.1"></script>
+<script type="text/javascript" src="https://www.silverf0x00.com/wp-content/plugins/wp-featherlight/js/wpFeatherlight.pkgd.min.js?ver=1.2.0"></script>
+<script type="text/javascript" src="https://www.silverf0x00.com/wp-includes/js/wp-embed.min.js?ver=4.9.1"></script>
+<script type="text/javascript" src="https://stats.wp.com/e-201802.js" async="" defer=""></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:5.7',blog:'120854007',post:'0',tz:'4.5',srv:'www.silverf0x00.com'} ]);
+	_stq.push([ 'clickTrackerInit', '120854007', '0' ]);
+</script>
+		<script type="text/javascript">
+			var bwpRecaptchaCallback = function() {
+				// render all collected recaptcha instances
+			};
+		</script>
+
+		<script src="https://www.google.com/recaptcha/api.js?onload=bwpRecaptchaCallback&amp;render=explicit" async="" defer=""></script>
+<script>
+$(document).ready(function(){
+$('.lpiframeoverlay').hide();
+});
+</script>
+
+
+
+			
+    
+<img src="https://pixel.wp.com/g.gif?v=ext&amp;j=1%3A5.7&amp;blog=120854007&amp;post=0&amp;tz=4.5&amp;srv=www.silverf0x00.com&amp;host=www.silverf0x00.com&amp;ref=&amp;rand=0.2937729301958878" alt=":)" id="wpstats" width="6" height="5"></body></html>

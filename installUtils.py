@@ -6,7 +6,7 @@ import urllib.request
 from urllib.error import URLError
 
 prefixRepoHub = "plaperdr/"
-prefixRepoLocal = "blink/"
+prefixRepoLocal = "seleniumblink/"
 dockerImages = ["blinkfedorig","blinkubuorig","blinkfonts","blinkbrowsers"]
 
 def downloadFile(file):
@@ -33,9 +33,11 @@ def pullDockerImage(name):
 
 def buildDockerImageHub(name,path):
     print("Building Docker image "+name+" with "+path)
+    #subprocess.call(["sudo","docker","build", "--no-cache","--pull","-t",prefixRepoHub+name,path])
     subprocess.call(["sudo","docker","build","--pull","-t",prefixRepoHub+name,path])
 
 def buildDockerImageLocal(name,path):
+    #subprocess.call(["sudo","docker","build", "--no-cache","--pull","-t",prefixRepoLocal+name,path])
     subprocess.call(["sudo","docker","build","--pull","-t",prefixRepoLocal+name,path])
 
 def buildDockerImageNoPullLocal(name,path):

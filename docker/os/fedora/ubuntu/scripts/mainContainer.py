@@ -16,6 +16,8 @@ from browsersList import browsersList
 # Selenium imports
 from selenium import webdriver
 from pyvirtualdisplay import Display
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+import runSeleniumScripts
 
 ############### Container Class
 class Container(object):
@@ -48,8 +50,8 @@ class Container(object):
         'Firefox':Firefox,
         'FirefoxESR':FirefoxESR,
         'Chrome':Chrome,
-        'Chromium':Chromium,
-        'Opera':Opera
+        'Chromium':Chromium
+        #'Opera':Opera
     }
 
     ### Init
@@ -100,9 +102,12 @@ class Container(object):
     @staticmethod
     def selectBrowser():
         #We chose a browser from the ones provided by each OS
-        #return Container.browsersDict[browsersList[random.randint(0,len(browsersList)-1)]]()
+        selectedBrowser = browsersList[random.randint(0,len(browsersList)-1)]
+        #return Container.browsersDict[selectedBrowser]()
         # Always run FirefoxESR for now
-        return Container.browsersDict[2]()
+        #selectedBrowser = browsersList[5]
+        print('-' + selectedBrowser)
+        return selectedBrowser, Container.browsersDict[selectedBrowser]()
 
     ### Check existence of data file
     # If the file does not exist, it is created
@@ -148,6 +153,25 @@ class Container(object):
                 l.append((row[0],row[1],int(row[2])))
         return l
 
+# Run single script
+def runSelenium(script_name = None) :
+    display = Display(visible = 0, size = (1920, 1080))
+    display.start()
+    profile = webdriver.FirefoxProfile("/home/blink/.mozilla/firefox/blink.default")
+    ffesr_binary = FirefoxBinary('/home/blink/browsers/firefox-latest-esr/firefox')
+    driver = webdriver.Firefox(profile, firefox_binary=ffesr_binary)
+    driver.get("https://amiunique.org/fp")
+    time.sleep(10)
+    driver.save_screenshot('/home/blink/Downloads/result.png')
+    driver.get_screenshot_as_png()
+    with open('/home/blink/Downloads/result.html', "wb") as fout:
+        fout.write(driver.page_source.encode("utf-8"))
+        fout.flush()
+
+# Run all scripts in specified directory
+def runAllSeleniumScripts(selected_browser, scripts_dir = None) :
+    scriptHandler = runSeleniumScripts.ScriptsHandler(selected_browser, scripts_dir)
+    scriptHandler.run()
 
 ############### Main
 def main():
@@ -175,7 +199,7 @@ def main():
             blink.selectFonts()
 
             #We chose the browser
-            browser = blink.selectBrowser()
+            browserName, browser = blink.selectBrowser()
 
             #We chose the plugins only if it is Firefox
             if isinstance(browser,FirefoxBase):
@@ -185,14 +209,17 @@ def main():
             browser.importData()
 
             #We launch the browser
-            browserProcess = browser.runBrowser()
+            #browserProcess = browser.runBrowser()
 
-            # Run selenium scrip
-            runSelenium()
+            # Run selenium scripts
+            runAllSeleniumScripts(browserName)
+
+            # Get into bash for debugging purposes
+            #subprocess.call(["/bin/bash"])
 
             #We wait for either the browsing session to be finished
-            while not isinstance(browserProcess.poll(),int):
-                time.sleep(1)
+            #while not isinstance(browserProcess.poll(),int):
+            #    time.sleep(1)
 
             encryption,refresh = browser.exportData()
 
@@ -216,16 +243,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-def runSelenium(script_name = None) :
-    display = Display(visible = 0, size = (1920, 1080))
-    display.start()
-    profile = webdriver.FirefoxProfile("/home/blink/.mozilla/firefox/blink.default")
-    driver = webdriver.Firefox(profile)
-    driver.get("https://amiunique.org/fp")
-    time.sleep(10)
-    driver.save_screenshot('/home/blink/Download/result.png')
-    driver.get_screenshot_as_png()
-    with open('/home/blink/Download/result.html', "w") as fout:
-        fout.write(self.driver.page_source.encode("utf-8"))
-        fout.flush()
