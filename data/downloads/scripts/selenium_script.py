@@ -12,7 +12,7 @@ def main() :
 	print('Using ' + sys.argv[1])
 	browser_handler = BrowserHandler()
 	driver = browser_handler.get_driver(selected_browser)
-	driver.get("https://silverf0x00.com")
+	driver.get("https://petsupplies.com")
 	time.sleep(10)
 	driver.save_screenshot('/home/blink/Downloads/result.png')
 	driver.get_screenshot_as_png()

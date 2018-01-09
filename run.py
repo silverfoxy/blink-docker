@@ -10,6 +10,8 @@ import subprocess
 import urllib.request
 from installContainers import buildDockerImageLocal,instantiateContainer
 from installUtils import prefixRepoLocal,prefixRepoHub
+from shutil import copyfile
+import argparse
 
 osImages = ["blinkfed","blinkubu"]
 ubuntuName = "xenial"
@@ -162,8 +164,22 @@ def main():
             writeInstallComplete(1)
             updateBrowsers()
 
-    if len(sys.argv) == 2:
-        chosenImage = sys.argv[1]
+    parser = argparse.ArgumentParser()
+    parser.add_argument("os_image", help="Select os image to run, random if left blank", nargs='?', default='')
+    parser.add_argument("-f", dest="input_script", help="Selenium script to run", default='')
+    args = parser.parse_args()
+
+    if args.input_script != '' :
+        # Copy script to corresponding directory to be run automatically
+        # /data/downloads/scripts/
+        scripts_dir = os.path.dirname(os.path.realpath(__file__)) + "/data/downloads/scripts/"
+        try :
+            copyfile(args.input_script, scripts_dir + 'selenium_script.py')
+        except Exception as e:
+            print(e)
+            return
+    if args.os_image != '' :
+        chosenImage = args.os_image
     else :
         chosenImage = osImages[random.randint(0,len(osImages)-1)]
     print("Image " + chosenImage + " chosen")
